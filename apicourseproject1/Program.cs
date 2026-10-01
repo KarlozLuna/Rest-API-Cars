@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(
  x =>
@@ -27,9 +27,8 @@ builder.Services.AddSwaggerGen(
              Description = "Create documentation for Cars",
              Contact = new OpenApiContact
              {
-                 Name = "Jesse Liberty",
-                 Email = "jesseliberty@gmail.com",
-                 Url = new Uri("https://jesseliberty.com")
+                 Name = "Carlos Linares",
+                 Email = "karlozlinarez@gmail.com",
              }
          });
      var xmlFilename = System.IO.Path.Combine(System.
